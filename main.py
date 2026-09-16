@@ -2,6 +2,13 @@ import time
 import sys
 import argparse
 import os
+
+if sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 from intersection import TrafficIntersection, PHASE_NS
 from controller import TrafficController
 

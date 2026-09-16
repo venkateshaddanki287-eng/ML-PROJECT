@@ -2,6 +2,12 @@ import time
 import random
 import sys
 
+if sys.stdout.encoding.lower() != 'utf-8':
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 # ==========================================
 # Constants and Configuration
 # ==========================================
