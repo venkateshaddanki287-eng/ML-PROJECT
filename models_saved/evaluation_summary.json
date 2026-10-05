@@ -1,0 +1,166 @@
+{
+  "Linear_Regression": {
+    "LinearRegression": {
+      "RMSE": 4248.0761,
+      "MAE": 3463.9805,
+      "R2": -0.0064
+    },
+    "Ridge": {
+      "RMSE": 4242.6013,
+      "MAE": 3458.7619,
+      "R2": -0.0039
+    },
+    "Lasso": {
+      "RMSE": 4242.026,
+      "MAE": 3457.7435,
+      "R2": -0.0036
+    },
+    "ElasticNet": {
+      "RMSE": 4238.3558,
+      "MAE": 3451.5969,
+      "R2": -0.0018
+    }
+  },
+  "Linear_Classification": {
+    "LogisticRegression": {
+      "Accuracy": 0.794,
+      "F1-Weighted": 0.7441
+    },
+    "MultinomialLogisticRegression": {
+      "Accuracy": 0.794,
+      "F1-Weighted": 0.7441
+    }
+  },
+  "Tree_Classification": {
+    "DecisionTree": {
+      "Accuracy": 0.866,
+      "F1-Weighted": 0.8534
+    },
+    "RandomForest": {
+      "Accuracy": 0.865,
+      "F1-Weighted": 0.8506
+    },
+    "GradientBoosting": {
+      "Accuracy": 0.865,
+      "F1-Weighted": 0.8526
+    },
+    "LightGBM": {
+      "Accuracy": 0.842,
+      "F1-Weighted": 0.8334
+    }
+  },
+  "Variance_Reduction_Demo": {
+    "DecisionTree_Mean_Accuracy": 0.7994,
+    "DecisionTree_Std_Variance": 0.0034,
+    "RandomForest_Mean_Accuracy": 0.8648,
+    "RandomForest_Std_Variance": 0.0031,
+    "Variance_Reduction_Factor": 1.11,
+    "Explanation": "Random Forest reduces variance by averaging predictions across multiple decorrelated bootstrapped trees."
+  },
+  "Unsupervised_Learning": {
+    "KMeans_Centroids": [
+      {
+        "north_queue": 89.97385298470556,
+        "south_queue": 85.08238776516998,
+        "east_queue": 97.68179575727788,
+        "west_queue": 82.79279723729678,
+        "north_arrival_rate": 0.788357178095709,
+        "south_arrival_rate": 0.788357178095709,
+        "east_arrival_rate": 0.7693635915145545,
+        "west_arrival_rate": 0.7693635915145545,
+        "current_green_time": 1.4292057227429709,
+        "previous_queue": 354.774543660581,
+        "queue_growth": 0.7562900838677802,
+        "waiting_time": 46.32054627672933,
+        "traffic_density": 0.5472668968919584,
+        "current_phase": 0.49925999013320177,
+        "Cluster_Size": 2027,
+        "Mean_Total_Queue": 355.5308337444502,
+        "Interpretation": "Low Traffic"
+      },
+      {
+        "north_queue": 1657.5404448938325,
+        "south_queue": 1667.3387259858441,
+        "east_queue": 808.9934277047524,
+        "west_queue": 804.3159757330639,
+        "north_arrival_rate": 3.9974721941354785,
+        "south_arrival_rate": 3.9974721941354785,
+        "east_arrival_rate": 2.2563195146612762,
+        "west_arrival_rate": 2.2563195146612762,
+        "current_green_time": 1.6966632962588475,
+        "previous_queue": 4928.336703741153,
+        "queue_growth": 9.851870576339733,
+        "waiting_time": 197.15676745245293,
+        "traffic_density": 0.9991253791708796,
+        "current_phase": 0.49797775530839233,
+        "Cluster_Size": 1978,
+        "Mean_Total_Queue": 4938.1885743174935,
+        "Interpretation": "Heavy Traffic"
+      },
+      {
+        "north_queue": 174.78994974874558,
+        "south_queue": 162.43718592964797,
+        "east_queue": 1943.625125628141,
+        "west_queue": 1863.3437185929654,
+        "north_arrival_rate": 1.0000000000000098,
+        "south_arrival_rate": 1.0000000000000098,
+        "east_arrival_rate": 4.499999999999982,
+        "west_arrival_rate": 4.499999999999982,
+        "current_green_time": 1.764824120603015,
+        "previous_queue": 4135.904522613065,
+        "queue_growth": 8.29145728643216,
+        "waiting_time": 190.93930444832245,
+        "traffic_density": 0.9982010050251255,
+        "current_phase": 0.507537688442211,
+        "Cluster_Size": 995,
+        "Mean_Total_Queue": 4144.195979899499,
+        "Interpretation": "Medium Traffic"
+      }
+    ],
+    "DBSCAN_Stats": {
+      "n_clusters": 8,
+      "n_outliers": 24,
+      "outlier_percentage": 0.48
+    },
+    "PCA_Explained_Variance": {
+      "explained_variance_ratio": [
+        0.4697,
+        0.237
+      ],
+      "cumulative_explained_variance": 0.7067
+    },
+    "Anomaly_Detection_Stats": {
+      "n_total": 5000,
+      "n_normal": 4750,
+      "n_anomalies": 250,
+      "anomaly_percentage": 5.0,
+      "mean_anomaly_score": 0.0727
+    }
+  },
+  "Tuning_And_Evaluation": {
+    "GridSearch_Best_Params": {
+      "max_depth": 10,
+      "n_estimators": 100
+    },
+    "GridSearch_Best_CV_Score": 0.8473,
+    "Bayesian_Best_Params": {
+      "n_estimators": 80,
+      "max_depth": 8
+    },
+    "Bayesian_Best_CV_Score": 0.8405,
+    "Best_Model_Test_Accuracy": 0.865,
+    "Best_Model_Test_F1": 0.8506,
+    "Best_Model_Mean_Brier_Score": 0.0659,
+    "Cross_Validation": {
+      "Mean_CV_Score": 0.8456,
+      "Std_CV_Score": 0.0129,
+      "Fold_Scores": [
+        0.8368,
+        0.8289,
+        0.8622,
+        0.8412,
+        0.859
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "model_name": "RandomForestClassifier_Pipeline",
+  "version": "1.0.0",
+  "features": [
+    "north_queue",
+    "south_queue",
+    "east_queue",
+    "west_queue",
+    "north_arrival_rate",
+    "south_arrival_rate",
+    "east_arrival_rate",
+    "west_arrival_rate",
+    "current_green_time",
+    "previous_queue",
+    "queue_growth",
+    "waiting_time",
+    "traffic_density",
+    "current_phase"
+  ],
+  "accuracy": 0.865,
+  "f1_weighted": 0.8506,
+  "target_classes": {
+    "0": "KEEP",
+    "1": "SWITCH_TO_NS",
+    "2": "SWITCH_TO_EW"
+  },
+  "best_hyperparameters": {
+    "max_depth": 10,
+    "n_estimators": 100
+  }
+}
